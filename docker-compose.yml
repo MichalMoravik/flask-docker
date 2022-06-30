@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  flask-docker:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/workspace
+    command: gunicorn --reload -b 0.0.0.0:8080 app:app
+    environment:
+      FLASK_ENV: development
