@@ -19,9 +19,9 @@
 In that case, you should remove the running container and rebuild the Docker
 image (don't forget to update requirements.txt with the new package).
 
-    Alternatively, you can execute a command on the container:
-    1. `docker exec -it <CONTAINER_ID> bash`
-    2. `pip3 install -r requirements.txt`
+    Alternatively, you can execute installation in the container:
+    - `docker exec -it <CONTAINER_ID> bash`
+    - `pip3 install -r requirements.txt`
 
 <br />
 
